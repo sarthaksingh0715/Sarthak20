@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Information</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="weather-wrap"><section class="panel"><p class="eyebrow">WEATHER LOOKUP</p><h1>Weather Information</h1><form id="weatherForm"><input id="city" placeholder="Enter city, e.g. Delhi" required><button class="btn">Search</button></form><p id="status" role="status">Enter a city to see current weather.</p><section id="weather" hidden><h2 id="place"></h2><p class="temperature" id="temperature"></p><p id="condition"></p><div class="cards"><article>Humidity<strong id="humidity"></strong></article><article>Wind<strong id="wind"></strong></article></div></section><p class="hint">Demo uses Open-Meteo geocoding and forecast APIs; no API key is required.</p></section></main>
+<script src="script.js" defer></script>
+</body>
+</html>

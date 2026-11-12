@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app-wrap"><section class="panel"><h1>Expense Calculator</h1><form id="expenseForm" class="expense-form"><input id="expenseName" placeholder="Expense name" required><input id="amount" type="number" min="0.01" step="0.01" placeholder="Amount (₹)" required><select id="category"><option>Food</option><option>Travel</option><option>Study</option><option>Other</option></select><button class="btn">Add Expense</button></form>
+<label>Monthly Budget (₹)<input id="budget" type="number" min="0" value="10000"></label><h2>Expenses</h2><ul id="expenseList" class="expense-list"></ul><div class="totals"><p>Total: <strong id="total">₹0.00</strong></p><p>Remaining: <strong id="remaining">₹10,000.00</strong></p></div></section></main>
+<script src="script.js" defer></script>
+</body>
+</html>

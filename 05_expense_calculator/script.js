@@ -1,0 +1,5 @@
+let expenses=[];
+const el=id=>document.getElementById(id), money=n=>'₹'+n.toFixed(2);
+function render(){el('expenseList').innerHTML='';expenses.forEach((x,i)=>{const li=document.createElement('li');const span=document.createElement('span');span.textContent=`${x.name} — ${x.category}: ${money(x.amount)}`;const del=document.createElement('button');del.textContent='Delete';del.className='delete';del.onclick=()=>{expenses.splice(i,1);render();};li.append(span,del);el('expenseList').appendChild(li);});const total=expenses.reduce((s,x)=>s+x.amount,0),budget=Number(el('budget').value)||0;el('total').textContent=money(total);el('remaining').textContent=money(budget-total);}
+el('expenseForm').onsubmit=e=>{e.preventDefault();const amount=Number(el('amount').value);if(amount<=0)return;expenses.push({name:el('expenseName').value.trim(),amount,category:el('category').value});e.target.reset();render();};
+el('budget').oninput=render;render();

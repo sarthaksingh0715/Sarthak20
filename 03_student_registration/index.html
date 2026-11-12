@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="form-page"><section class="panel"><h1>Student Registration</h1><p>Enter your details to register.</p><form id="registrationForm">
+<label>Full Name<input id="name" required minlength="2" placeholder="Your full name"></label>
+<label>Email<input id="email" type="email" required placeholder="name@example.com"></label>
+<label>Mobile Number<input id="mobile" type="tel" required pattern="[0-9]{10}" placeholder="10-digit mobile number"></label>
+<label>Course<select id="course" required><option value="">Select course</option><option>B.Tech CSE</option><option>B.Tech ECE</option><option>B.Tech Mechanical</option><option>BCA</option></select></label>
+<fieldset><legend>Gender</legend><label class="inline"><input type="radio" name="gender" value="Male" required> Male</label><label class="inline"><input type="radio" name="gender" value="Female"> Female</label><label class="inline"><input type="radio" name="gender" value="Other"> Other</label></fieldset>
+<label>Password<input id="password" type="password" required minlength="6" placeholder="At least 6 characters"></label>
+<label>Confirm Password<input id="confirmPassword" type="password" required placeholder="Re-enter password"></label>
+<button class="btn">Register</button><p id="result" role="status"></p></form></section></main>
+<script src="script.js" defer></script>
+</body>
+</html>

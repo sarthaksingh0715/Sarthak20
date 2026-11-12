@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Event Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><nav><a class="logo" href="#">Campus Events</a><a href="#events">Events</a><a href="#register">Register</a></nav></header><main><section class="hero"><h1>What's happening on campus?</h1><p>Discover events, workshops and activities.</p></section><section id="events"><h2>Upcoming Events</h2><div class="cards"><article><h3>Web Development Workshop</h3><p>Date: 20 December 2026</p><p>Venue: Computer Lab 2</p><p>Learn the basics of building websites.</p></article><article><h3>Project Exhibition</h3><p>Date: 10 January 2027</p><p>Venue: Main Auditorium</p><p>Showcase student projects and ideas.</p></article></div></section><section id="register"><h2>Event Registration</h2><form id="eventForm"><input id="name" placeholder="Full name" required><input id="email" type="email" placeholder="Email" required><select id="event" required><option value="">Choose an event</option><option>Web Development Workshop</option><option>Project Exhibition</option></select><input id="eventDate" type="date" required><button class="btn">Register</button><p id="message" role="status"></p></form></section></main>
+<script src="script.js" defer></script>
+</body>
+</html>
